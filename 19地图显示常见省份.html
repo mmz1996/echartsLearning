@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src = lib/echarts.min.js></script>
+    <script src="lib/jquery.min.js"></script>
+</head>
+<body>
+<div style="width: 600px;height:400px"></div>
+<script>
+
+    var mCharts = echarts.init(document.querySelector("div"))
+    $.get('json/map/anhui.json',function (ret) {
+        echarts.registerMap('anhui',ret)
+        var option = {
+            geo:{
+                type:'map',
+                map:'anhui',
+                roam:true,
+                label:{
+                    show:true
+                }
+            }
+        }
+        mCharts.setOption(option)
+    })
+
+</script>
+</body>
+
+</html>

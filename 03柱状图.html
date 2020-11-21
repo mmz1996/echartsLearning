@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="lib/echarts.min.js"></script>
+</head>
+<body>
+    <div style="width: 600px;height: 400px"></div>
+    <script>
+        var chars = echarts.init(document.querySelector("div"))
+        var xData = ['张三','李四','王五']
+        var yData = [88,92,63]
+        var options = {
+            xAxis:{
+              type:'category',
+              data:xData
+            },
+            yAxis: {
+              type:'value'
+            },
+            series:[
+                {
+                    name:'语文',
+                    type:'bar',
+                    data:yData,
+                    markPoint:{
+                        data:[
+                            {
+                                type:'max',
+                                name:'最大值'
+                            },
+                            {
+                                type:'min',
+                                name:'最小值'
+                            }
+                        ]
+                    },
+                    markLine:{
+                        data:[
+                            {
+                                type:'average',
+                                name:'平均值'
+                            }
+                        ]
+                    },
+                    label:{
+                      show:true
+                    },
+                    barWidth:'30%',
+                }
+            ]
+        }
+        chars.setOption(options)
+    </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="lib/echarts.min.js"></script>
+</head>
+<body>
+<div style="width: 700px;height:400px"></div>
+<script>
+    var mCharts = echarts.init(document.querySelector("div"))
+    var xDataArr = ['11月13日', '11月14日', '11月15日', '11月16日', '11月17日', '11月18日', '11月19日', '11月20日']
+    var yDataArr = [88, 92, 63, 77, 94, 80, 72, 86]
+    var yDataArr1 = [12, 92, 63, 77, 24, 80, 44, 86]
+    var option = {
+        title: {
+            text: '停车场近七日收益',
+            textStyle: {
+                color: 'black'
+            },
+            borderWidth: 5,
+            borderColor: 'black',
+            borderRadius: 5,
+            left: 50,
+            top: 10
+        },
+        tooltip: {
+            // trigger: 'item'
+            trigger: 'axis',
+            triggerOn: 'click',
+            // formatter: '{b} 的成绩是 {c}'
+            formatter: function(arg){
+                return arg[0].name + '的收益为:' + arg[0].data
+            }
+        },
+        toolbox: { // 工具箱按钮
+            feature: {
+                saveAsImage: {}, // 导出图片
+                dataView: {},
+                restore:{},
+                dataZoom:{},
+                magicType: {
+                    type:['bar','line']
+                }
+            }
+        },
+        xAxis: {
+            type: 'category',
+            data: xDataArr
+        },
+        yAxis: {
+            type: 'value'
+        },
+        series: [
+            {
+                name: '正常停车位',
+                type: 'bar',
+                data: yDataArr,
+                data: yDataArr,markPoint:{
+                    data:[
+                        {
+                            type:'max',
+                            name:'最大值'
+                        },
+                        {
+                            type:'min',
+                            name:'最小值'
+                        }
+                    ]
+                },
+                markLine:{
+                    data:[
+                        {
+                            type:'average',
+                            name:'平均值'
+                        }
+                    ]
+                },
+                label:{
+                    show:true
+                },
+            },
+            {
+                name:'其他停车位',
+                type: 'bar',
+                data: yDataArr1,
+                markPoint:{
+                    data:[
+                        {
+                            type:'max',
+                            name:'最大值'
+                        },
+                        {
+                            type:'min',
+                            name:'最小值'
+                        }
+                    ]
+                },
+                markLine:{
+                    data:[
+                        {
+                            type:'average',
+                            name:'平均值'
+                        }
+                    ]
+                },
+                label:{
+                    show:true
+                },
+            }
+        ],
+        legend: {
+            data:['正常停车位','其他停车位']
+        }
+    }
+    mCharts.setOption(option)
+</script>
+</body>
+</html>

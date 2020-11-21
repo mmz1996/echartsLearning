@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="lib/echarts.min.js"></script>
+</head>
+<body>
+    <div style="width: 600px;height: 400px"></div>
+    <script>
+
+        var MyEchart = echarts.init(document.querySelector('div'))
+        var option = {
+            series:[
+                {
+                    type:'gauge',
+                    data:[
+                        {
+                            value:97,
+                            itemStyle:{
+                                color:'red'
+                            }
+                        },
+                        {
+                            value:85,
+                            itemStyle: {
+                                color: 'green'
+                            }
+                        }
+                    ],
+                    min:50,
+                    max:200,
+                }
+            ]
+        }
+        MyEchart.setOption(option)
+    </script>
+</body>
+</html>

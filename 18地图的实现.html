@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src = lib/echarts.min.js></script>
+    <script src="lib/jquery.min.js"></script>
+</head>
+<body>
+<div style="width: 600px;height:400px"></div>
+<script>
+
+    var mCharts = echarts.init(document.querySelector("div"))
+    $.get('json/map/china.json',function (ret) {
+        echarts.registerMap('chinaMap',ret)
+        var option = {
+            geo:{
+                type:'map',
+                map:'chinaMap',
+                roam:true,
+                label:{
+                    show:true
+                },
+                zoom:1, //初始化缩放比例
+                center:[87.61,43.79]
+            }
+        }
+        mCharts.setOption(option)
+    })
+
+</script>
+</body>
+
+</html>

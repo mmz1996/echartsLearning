@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="lib/echarts.min.js"></script>
+</head>
+<body>
+    <div style="width: 600px;height: 400px"></div>
+    <script>
+
+        var MyEchart = echarts.init(document.querySelector('div'))
+        var option = {
+            title: {
+                text: '停车场车位数量使用情况',
+                textStyle: {
+                    color: 'black'
+                },
+                borderWidth: 5,
+                borderColor: 'black',
+                borderRadius: 5,
+                left: 50,
+                top: 10
+            },
+            series:[
+                {
+                    type:'gauge',
+                    data:[
+                        {
+                            value:97,
+                            itemStyle:{
+                                color:'red'
+                            }
+                        }
+                    ],
+                    min:50,
+                    max:200,
+                }
+            ]
+        }
+        MyEchart.setOption(option)
+    </script>
+</body>
+</html>

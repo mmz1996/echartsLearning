@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="250cb998-3ebd-4dc9-a961-ba3c7a34d3ed" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1k4xgYPioqBDsXnbGL8hpz6Ba1A" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\echarts\mmz" />
+      <recent name="F:\echarts\mmz\lib" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\echarts\mmz" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="250cb998-3ebd-4dc9-a961-ba3c7a34d3ed" name="Default Changelist" comment="" />
+      <created>1604973776534</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604973776534</updated>
+      <workItem from="1604973779064" duration="2273000" />
+      <workItem from="1605142556638" duration="5103000" />
+      <workItem from="1605420277485" duration="923000" />
+      <workItem from="1605490172755" duration="5195000" />
+      <workItem from="1605666234368" duration="2787000" />
+      <workItem from="1605687440496" duration="1940000" />
+      <workItem from="1605770874381" duration="5646000" />
+      <workItem from="1605847719802" duration="1014000" />
+      <workItem from="1605862558325" duration="2054000" />
+      <workItem from="1605934835514" duration="258000" />
+      <workItem from="1605941782543" duration="328000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="526" y="221" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604973821312">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="526" y="221" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1604973821312" />
+    <state x="272" y="57" key="SettingsEditor" timestamp="1605771614651">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="272" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605771614651" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1605149702831">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605149702831" />
+  </component>
+</project>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="lib/echarts.min.js"></script>
+</head>
+<body>
+    <div style="width: 600px;height: 400px"></div>
+    <script>
+        var xDataArr = ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月']
+        var yDataArr = [3000, 2800, 900, 1000, 800, 700, 1400, 1300, 900, 1000, 800, 600]
+        var MyEchart = echarts.init(document.querySelector('div'))
+        var option = {
+            title:{
+                text:'康师傅'
+            },
+            xAxis:{
+                data:xDataArr,
+                type:'category'
+            },
+            yAxis:{
+                type:'value'
+            },
+            series:[
+                {
+                    name:'康师傅',
+                    data:yDataArr,
+                    type:'line',
+                    markPoint:{
+                        data:[
+                            {
+                                type:'max'
+                            },
+                            {
+                                type:'min'
+                            }
+                        ]
+                    },
+                    markLine:{
+                        data:[
+                            {
+                                type:'average'
+                            }
+                        ]
+                    },
+                    markArea:{
+                        data:[
+                            [
+                                {
+                                    xAxis: '1月'
+                                },
+                                {
+                                    xAxis:'2月'
+                                }
+                            ],
+                            [
+                                {
+                                    xAxis: '7月'
+                                },
+                                {
+                                    xAxis:'8月'
+                                }
+                            ]
+                        ]
+                    },
+                    smooth:true,
+                    lineStyle:{
+                        color:'blue',
+                        type: 'solid' //dashed dotted solid
+                    },
+                    areaStyle:{
+                        color:'pink'
+                    }
+                }
+            ]
+        }
+        MyEchart.setOption(option)
+    </script>
+</body>
+</html>
